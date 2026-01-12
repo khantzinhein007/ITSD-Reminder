@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  itsd-reminder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # Enable multi-platform builds
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    image: itsd-reminder:latest
+    container_name: itsd-reminder-bot
+    restart: unless-stopped
+    
+    # Load environment variables from .env file
+    env_file:
+      - .env
+    
+    # Mount data directory for persistent storage
+    volumes:
+      - ./data:/app/data
+    
+    # Resource limits (optional, adjust as needed)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.1'
+          memory: 64M
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import slack_sdk; print('OK')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

@@ -1,0 +1,52 @@
+# ============================================
+# ITSD Reminder Bot - Docker Ignore File
+# ============================================
+
+# Git
+.git
+.gitignore
+
+# Environment files (secrets!)
+.env
+.env.local
+.env.*.local
+
+# Data files
+reminded_messages.json
+data/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+docs/
+*.md
+
+# Docker files (avoid recursive builds)
+docker-compose*.yml
+
+# Logs
+*.log
+logs/
