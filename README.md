@@ -22,22 +22,6 @@ A Slack bot that monitors your IT Service Desk channel and automatically reminds
 
 ---
 
-## 📑 Table of Contents
-
-- [✨ Features](#-features)
-- [🚀 Quick Start](#-quick-start)
-- [📦 Prerequisites](#-prerequisites)
-- [⚙️ Configuration](#️-configuration)
-- [🐳 Docker Deployment](#-docker-deployment)
-- [💻 Running Locally](#-running-locally)
-- [🏗️ Architecture](#️-architecture)
-- [📁 Project Structure](#-project-structure)
-- [🔧 Troubleshooting](#-troubleshooting)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [👤 Author](#-author)
-
----
 
 ## ✨ Features
 
