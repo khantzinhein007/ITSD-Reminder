@@ -33,15 +33,64 @@ A Slack bot that automatically reminds users to select a category for their IT S
 - Python 3.9 or later
 - pip (Python package manager)
 
-### Slack Setup
-1. Create a Slack App at [api.slack.com/apps](https://api.slack.com/apps)
-2. Add the following **Bot Token Scopes** under OAuth & Permissions:
-   - `channels:history` - Read messages from public channels
-   - `channels:read` - View basic channel info
-   - `chat:write` - Send messages
-   - `users:read` - View user info
-3. Install the app to your workspace
+### Slack Bot Setup (Step-by-Step)
+
+Follow these steps to create and configure your Slack bot:
+
+#### Step 1: Create a Slack App
+
+1. Go to [api.slack.com/apps](https://api.slack.com/apps)
+2. Click **"Create New App"**
+3. Choose **"From scratch"**
+4. Enter an App Name (e.g., "ITSD Reminder Bot")
+5. Select your workspace
+6. Click **"Create App"**
+
+#### Step 2: Configure Bot Permissions
+
+1. In the left sidebar, click **"OAuth & Permissions"**
+2. Scroll down to **"Scopes"** → **"Bot Token Scopes"**
+3. Click **"Add an OAuth Scope"** and add these scopes:
+
+| Scope | Purpose |
+| ----- | ------- |
+| `channels:history` | Read messages from public channels |
+| `channels:read` | View basic channel info |
+| `chat:write` | Send reminder messages |
+| `users:read` | Get user information for mentions |
+
+#### Step 3: Install the App
+
+1. Scroll up to **"OAuth Tokens for Your Workspace"**
+2. Click **"Install to Workspace"**
+3. Review the permissions and click **"Allow"**
 4. Copy the **Bot User OAuth Token** (starts with `xoxb-`)
+   - This is your `SLACK_BOT_TOKEN`
+
+#### Step 4: Invite Bot to Channel
+
+1. Open Slack and go to your IT Service Desk channel
+2. Type `/invite @YourBotName` (use the name you gave your app)
+3. The bot is now in the channel and can read/send messages
+
+#### Step 5: Get Required IDs
+
+**Channel ID:**
+1. Right-click on your channel name in Slack
+2. Select **"View channel details"**
+3. Scroll to the bottom - copy the **Channel ID** (starts with `C`)
+
+**HelpDesk Bot ID:**
+1. Find any message from your HelpDesk bot in the channel
+2. Click the three dots (⋮) on the message → **"Copy link"**
+3. The URL contains info, or use Slack's API to find the `bot_id` (starts with `B`)
+
+> **Tip:** You can also find the HelpDesk bot ID by making an API call:
+> ```bash
+> curl -H "Authorization: Bearer xoxb-your-token" \
+>   "https://slack.com/api/conversations.history?channel=YOUR_CHANNEL_ID&limit=50" \
+>   | grep -o '"bot_id":"[^"]*"' | head -1
+> ```
 
 ## 🚀 Quick Start
 
